@@ -1,0 +1,5 @@
+rootProject.name = 'ToastClient'
+
+include "toastclient-api"
+include "toastclient-mc12"
+//include "toastclient-mc19-fabric"

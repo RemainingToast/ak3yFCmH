@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+allprojects {
+    group 'me.remainingtoast'
+    version '1.0-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+}
