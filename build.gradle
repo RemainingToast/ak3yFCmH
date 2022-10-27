@@ -1,8 +1,7 @@
-plugins {
-    id 'java'
-}
-
 allprojects {
+    apply plugin: "idea"
+    apply plugin: "java"
+
     group 'me.remainingtoast'
     version '1.0-SNAPSHOT'
 }

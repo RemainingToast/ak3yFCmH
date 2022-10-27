@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/toastclient-api" />
+            <option value="$PROJECT_DIR$/toastclient-mc12" />
             <option value="$PROJECT_DIR$/toastclient-mc19-fabric" />
           </set>
         </option>

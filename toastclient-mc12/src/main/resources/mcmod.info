@@ -1,18 +1,12 @@
 [
-  {
-    "modid": "ToastClient",
-    "name": "ToastClient",
-    "description": "",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
-    "url": "",
-    "updateUrl": "",
-    "authorList": [
-      "RemainingToast"
-    ],
-    "credits": "",
-    "logoFile": "",
-    "screenshots": [],
-    "dependencies": []
-  }
+	{
+		"modid": "toastclient-mod12",
+		"name": "ToastClient",
+		"description": "ToastClient 1.12.2",
+		"version": "${version}",
+		"mcversion": "${mcversion}",
+		"url": "",
+		"authorList": ["RemainingToast"],
+		"logoFile": ""
+	}
 ]
