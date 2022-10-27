@@ -1,3 +1,5 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
 buildscript {
 	repositories {
 		gradlePluginPortal()
@@ -8,46 +10,42 @@ buildscript {
 	}
 	dependencies {
 		classpath "net.minecraftforge.gradle:ForgeGradle:${project.forgeGradle}"
-		classpath "com.github.jengelman.gradle.plugins:shadow:4.0.4"
 	}
 }
 
 apply plugin: "net.minecraftforge.gradle"
-apply plugin: "com.github.johnrengelman.shadow"
 
-configurations {
-	shadow
-	implementation.extendsFrom shadow
+processResources {
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+
+	from(sourceSets.main.resources.srcDirs) {
+		include "mcmod.info"
+		filter(ReplaceTokens, tokens: [version: project.version, mcversion: "1.12.2"])
+	}
+}
+
+dependencies {
+	minecraft "net.minecraftforge:forge:${project.minecraft12}"
+	implementation project(':toastclient-api')
+	implementation "com.lukflug:panelstudio:0.2.1"
+	implementation "com.lukflug:panelstudio-mc12:0.2.0"
 }
 
 minecraft {
 	mappings("stable", project.mappings12)
 }
 
-dependencies {
-	minecraft "net.minecraftforge:forge:${project.minecraft12}"
-	shadow project(':toastclient-api')
-	shadow "com.lukflug:panelstudio:0.2.1"
-	shadow "com.lukflug:panelstudio-mc12:0.2.0"
-}
-
-processResources {
-	inputs.property "version", project.version
-	from (sourceSets.main.resources.srcDirs) {
-		include "mcmod.info"
-		expand "version": project.version, "mcversion": "1.12.2"
-	}
-	from (sourceSets.main.resources.srcDirs) {
-		exclude "mcmod.info"
-	}
-}
-
 shadowJar {
-	classifier = ""
-	configurations = [project.configurations.shadow]
-	relocate "com.lukflug.panelstudio", "com.lukflug.panelstudio_0_2_1"
+	getDestinationDirectory().set(file("$rootDir/out"))
+
+	final String archiveName = parent.name + '-1.12.2.jar'
+	getArchiveFileName().set(archiveName)
+
+	dependencies {
+		include(project(':toastclient-api'))
+	}
 }
 
-reobf {
-	shadowJar{}
+build {
+	dependsOn(shadowJar)
 }
