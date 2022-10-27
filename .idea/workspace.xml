@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43929c7d-a684-4fd2-8b4f-fd56d435b92e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toastclient-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toastclient-mc12/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc12/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,24 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ToastClient" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToastClient" type="f1a62948:ProjectNode" />
+                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToastClient" type="f1a62948:ProjectNode" />
+                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToastClient" type="f1a62948:ProjectNode" />
+                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -80,7 +96,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "/Users/wheeze/IdeaProjects/ToastClient/toastclient-mc12/src/main/java/me/remainingtoast/toastclient",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.build"
@@ -96,20 +112,18 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.toastclient-mc12 build">
-    <configuration name="ToastClient build" type="GradleRunConfiguration" factoryName="Gradle">
+  <component name="RunManager" selected="Gradle.ToastClient">
+    <configuration name="ToastClient" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
-        <option name="executionName" value="ToastClient build" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/toastclient-mc19-fabric" />
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
+          <list />
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -123,7 +137,7 @@
         <option name="executionName" value="toastclient-mc12 build" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/toastclient-mc12" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -139,6 +153,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.toastclient-mc12 build" />
+      <item itemvalue="Gradle.ToastClient" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -170,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666863022212</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rewrite gradle files (more todo)">
+      <created>1666864733134</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666864733134</updated>
+    </task>
+    <task id="LOCAL-00005" summary="almost working">
+      <created>1666871587751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666871587751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +221,8 @@
     <MESSAGE value="start on multi version base" />
     <MESSAGE value="fix mc19-version" />
     <MESSAGE value="fix mc12" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix mc12" />
+    <MESSAGE value="rewrite gradle files (more todo)" />
+    <MESSAGE value="almost working" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost working" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "ToastClient",
+  "id": "toastclient-mc19",
   "version": "${version}",
   "name": "ToastClient",
   "description": "",
@@ -9,18 +9,14 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/ToastClient/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "me.remainingtoast.toastclient.client.ToastClientClient"
-    ],
-    "main": [
       "me.remainingtoast.toastclient.ToastClient"
     ]
   },
   "mixins": [
-    "ToastClient.mixins.json"
+    "toastclient.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.10",
