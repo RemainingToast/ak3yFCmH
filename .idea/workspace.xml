@@ -3,10 +3,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="ToastClient.toastclient-api.test" />
+      <module name="ToastClient.test" />
+      <module name="ToastClient.toastclient-mc12" />
+      <module name="ToastClient.main" />
+      <module name="ToastClient.toastclient-mc12.main" />
+      <module name="ToastClient" />
+      <module name="ToastClient.toastclient-api" />
+      <module name="ToastClient.toastclient-mc12.test" />
+      <module name="ToastClient.toastclient-api.main" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="43929c7d-a684-4fd2-8b4f-fd56d435b92e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/events/TickEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/IModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/ModuleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toastclient-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/IToastClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/IToastClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/ToastClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/ToastClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +71,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ToastClient" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ToastClient" type="f1a62948:ProjectNode" />
-                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ToastClient" type="f1a62948:ProjectNode" />
-                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ToastClient" type="f1a62948:ProjectNode" />
-                <item name="toastclient-mc12" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -71,8 +81,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,18 +101,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/wheeze/IdeaProjects/ToastClient/toastclient-mc12/src/main/java/me/remainingtoast/toastclient",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wheeze/IdeaProjects/ToastClient/toastclient-mc12/src/main/java/me/remainingtoast/toastclient&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.18159609&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient" />
@@ -123,7 +133,9 @@
           <list />
         </option>
         <option name="taskNames">
-          <list />
+          <list>
+            <option value="build" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -153,10 +165,37 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="toastclient-mc19-fabric build" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/toastclient-mc19-fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.toastclient-mc12 build" />
       <item itemvalue="Gradle.ToastClient" />
+      <item itemvalue="Gradle.toastclient-mc19-fabric build" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.toastclient-mc19-fabric build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -202,8 +241,24 @@
       <option name="project" value="LOCAL" />
       <updated>1666871587751</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="almost working">
+      <created>1666871757074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666871757074</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnloadedModulesList">
+    <module name="ToastClient.toastclient-mc19-fabric" />
+    <module name="ToastClient.toastclient-mc19-fabric.main" />
+    <module name="ToastClient.toastclient-mc19-fabric.test" />
+    <module name="toastclient-mc12.main" />
+    <module name="toastclient-mc12.test" />
+    <module name="toastclient-mc19-fabric.main" />
+    <module name="toastclient-mc19-fabric.test" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

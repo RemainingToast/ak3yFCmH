@@ -17,6 +17,11 @@ subprojects {
         mavenCentral()
 
         maven {
+            name = "jitpack"
+            url = "https://jitpack.io"
+        }
+
+        maven {
             name = "lukflug"
             url = "https://lukflug.github.io/maven/"
         }

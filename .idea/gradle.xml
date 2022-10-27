@@ -15,24 +15,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/toastclient-mc12" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/toastclient-mc12" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/toastclient-mc19-fabric" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/toastclient-mc19-fabric" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>

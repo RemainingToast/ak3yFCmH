@@ -1,7 +1,9 @@
 package me.remainingtoast.toastclient.api;
 
-public interface IToastClient {
+import me.remainingtoast.toastclient.api.module.ModuleManager;
 
+public interface IToastClient {
     String getVersion();
+    ModuleManager getModuleManager();
 
 }

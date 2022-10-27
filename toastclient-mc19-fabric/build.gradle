@@ -1,6 +1,19 @@
-plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = "Fabric"
+            url = "https://maven.fabricmc.net/"
+        }
+    }
+    dependencies {
+        classpath "net.fabricmc:fabric-loom:0.7.35"
+    }
 }
+
+apply plugin: "fabric-loom"
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 
 dependencies {
     // To change the versions see the gradle.properties file
@@ -33,17 +46,7 @@ build {
     dependsOn(shadowJar)
 }
 
-def targetJavaVersion = 17
 tasks.withType(JavaCompile).configureEach {
-    it.options.encoding = "UTF-8"
-    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
-        it.options.release = targetJavaVersion
-    }
-}
-
-java {
-    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
-    if (JavaVersion.current() < javaVersion) {
-        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
-    }
+    // Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
+    it.options.release = 17
 }
