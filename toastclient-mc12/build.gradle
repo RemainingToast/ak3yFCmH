@@ -27,6 +27,13 @@ processResources {
 dependencies {
 	minecraft "net.minecraftforge:forge:${project.minecraft12}"
 	implementation project(':toastclient-api')
+	implementation("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
+		exclude module: 'commons-io'
+		exclude module: 'gson'
+		exclude module: 'guava'
+		exclude module: 'launchwrapper'
+		exclude module: 'log4j-core'
+	}
 	implementation "com.lukflug:panelstudio:0.2.1"
 	implementation "com.lukflug:panelstudio-mc12:0.2.0"
 }

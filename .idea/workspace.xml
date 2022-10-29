@@ -18,23 +18,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43929c7d-a684-4fd2-8b4f-fd56d435b92e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/events/TickEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/IModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/module/ModuleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/mixin/MixinLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/mixin/mixins/MixinEntityPlayerSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/resources/mixins.toastclient.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toastclient-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-api/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/IToastClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/IToastClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/ToastClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/ToastClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toastclient-mc12/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc12/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666871757074</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="start on api">
+      <created>1666877684016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666877684018</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnloadedModulesList">
@@ -278,6 +276,7 @@
     <MESSAGE value="fix mc12" />
     <MESSAGE value="rewrite gradle files (more todo)" />
     <MESSAGE value="almost working" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost working" />
+    <MESSAGE value="start on api" />
+    <option name="LAST_COMMIT_MESSAGE" value="start on api" />
   </component>
 </project>

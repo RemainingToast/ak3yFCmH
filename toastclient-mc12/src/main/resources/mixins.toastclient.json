@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.remainingtoast.toastclient.mixin.mixins",
+  "refmap": "mixins.toastclient.refmap.json",
+  "mixins": [
+    "MixinEntityPlayerSP"
+  ]
+}

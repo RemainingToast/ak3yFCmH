@@ -2,12 +2,12 @@ package me.remainingtoast.toastclient.api.events;
 
 import me.bush.eventbus.event.Event;
 
-public class TickEvent extends Event {
-    public static class Pre extends TickEvent {
+public class PlayerTickEvent extends Event {
+    public static class Pre extends PlayerTickEvent {
 
     }
 
-    public static class Post extends TickEvent {
+    public static class Post extends PlayerTickEvent {
 
     }
 

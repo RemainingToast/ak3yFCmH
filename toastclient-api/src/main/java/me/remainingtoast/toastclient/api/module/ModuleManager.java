@@ -6,7 +6,7 @@ import lombok.Setter;
 import me.bush.eventbus.annotation.EventListener;
 import me.bush.eventbus.annotation.ListenerPriority;
 import me.remainingtoast.toastclient.api.IToastClient;
-import me.remainingtoast.toastclient.api.events.TickEvent;
+import me.remainingtoast.toastclient.api.events.PlayerTickEvent;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class ModuleManager {
     private ArrayList<IModule> modules = new ArrayList<>();
 
     @EventListener(priority = ListenerPriority.HIGHEST)
-    public void onTick(TickEvent.Pre event) {
+    public void onTick(PlayerTickEvent.Pre event) {
         for (IModule module : modules) {
             if (!module.enabled()) continue;
             module.tick();
