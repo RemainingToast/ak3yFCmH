@@ -13,7 +13,12 @@ buildscript {
 
 apply plugin: "fabric-loom"
 
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
 
 dependencies {
     // To change the versions see the gradle.properties file
@@ -22,13 +27,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader19fabric}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.api19fabric}"
     implementation project(":toastclient-api")
-}
-
-processResources {
-    inputs.property "version", project.version
-    filesMatching("fabric.mod.json") {
-        expand "version": project.version
-    }
 }
 
 shadowJar {
@@ -44,9 +42,4 @@ shadowJar {
 
 build {
     dependsOn(shadowJar)
-}
-
-tasks.withType(JavaCompile).configureEach {
-    // Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
-    it.options.release = 17
 }
