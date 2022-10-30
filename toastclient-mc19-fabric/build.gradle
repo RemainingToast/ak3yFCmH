@@ -7,11 +7,13 @@ buildscript {
         }
     }
     dependencies {
-        classpath "net.fabricmc:fabric-loom:0.7.35"
+        classpath "net.fabricmc:fabric-loom:${project.loomVersion}"
     }
 }
 
 apply plugin: "fabric-loom"
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 
 processResources {
     inputs.property "version", project.version
@@ -32,7 +34,8 @@ dependencies {
 shadowJar {
     getDestinationDirectory().set(file("$rootDir/out"))
 
-    final String archiveName = parent.name + '-1.19.2.jar'
+    final String version = parent.version.toString().replaceAll("mcversion", project.minecraft19fabric)
+    final String archiveName = parent.name + version + '.jar'
     getArchiveFileName().set(archiveName)
 
     dependencies {
@@ -43,3 +46,8 @@ shadowJar {
 build {
     dependsOn(shadowJar)
 }
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+

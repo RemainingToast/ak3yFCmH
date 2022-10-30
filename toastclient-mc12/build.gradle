@@ -45,7 +45,8 @@ minecraft {
 shadowJar {
 	getDestinationDirectory().set(file("$rootDir/out"))
 
-	final String archiveName = parent.name + '-1.12.2.jar'
+	final String version = parent.version.toString().replaceAll("mcversion", "1.12.2")
+	final String archiveName = parent.name + version + '.jar'
 	getArchiveFileName().set(archiveName)
 
 	dependencies {
