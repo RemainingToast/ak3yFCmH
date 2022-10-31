@@ -16,13 +16,13 @@ public class ModuleManager {
     private final IToastClient toastClient;
     @Getter
     @Setter
-    private ArrayList<IModule> modules = new ArrayList<>();
+    private ArrayList<Module> modules = new ArrayList<>();
 
     @EventListener(priority = ListenerPriority.HIGHEST)
     public void onTick(PlayerTickEvent.Pre event) {
-        for (IModule module : modules) {
-            if (!module.enabled()) continue;
-            module.tick();
+        for (Module module : modules) {
+            if (!module.isEnabled().get()) continue;
+//            module.tick();
         }
     }
 }

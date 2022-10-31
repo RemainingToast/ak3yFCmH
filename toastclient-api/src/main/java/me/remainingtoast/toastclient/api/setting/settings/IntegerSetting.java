@@ -7,7 +7,7 @@ import me.remainingtoast.toastclient.api.setting.Setting;
 public class IntegerSetting extends Setting<Integer> implements INumberSetting {
 	public final int min, max;
 	
-	public IntegerSetting (String displayName, String configName, String description, IBoolean visible, int min, int max, int value) {
+	public IntegerSetting(String displayName, String configName, String description, IBoolean visible, int min, int max, int value) {
 		super(displayName, configName, description, visible, value);
 		this.min = min;
 		this.max = max;
