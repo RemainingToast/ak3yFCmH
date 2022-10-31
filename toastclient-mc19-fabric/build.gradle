@@ -28,6 +28,7 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.mappings19fabric}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader19fabric}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.api19fabric}"
+    implementation "com.lukflug:panelstudio-mc16-fabric:0.2.0"
     implementation project(":toastclient-api")
 }
 

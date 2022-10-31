@@ -34,7 +34,6 @@ dependencies {
 		exclude module: 'launchwrapper'
 		exclude module: 'log4j-core'
 	}
-	implementation "com.lukflug:panelstudio:0.2.1"
 	implementation "com.lukflug:panelstudio-mc12:0.2.0"
 }
 

@@ -23,12 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43929c7d-a684-4fd2-8b4f-fd56d435b92e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/gui/ClickGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/Setting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/BooleanSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/DoubleSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/EnumSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/IntegerSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/KeybindSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-api/src/main/java/me/remainingtoast/toastclient/api/setting/settings/StringSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/module/ClickGUIModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient/module/ForgeModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toastclient-mc12/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc12/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/toastclient-mc19-fabric/build.gradle" afterDir="false" />
     </list>
@@ -97,17 +102,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/wheeze/IdeaProjects/ToastClient/toastclient-mc12/src/main/java/me/remainingtoast/toastclient",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.18159609",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wheeze/IdeaProjects/ToastClient/toastclient-mc12/src/main/java/me/remainingtoast/toastclient&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.18159609&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/toastclient-mc12/src/main/java/me/remainingtoast/toastclient" />
@@ -342,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667156120985</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add git commit to jar">
+      <created>1667159087631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667159087631</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnloadedModulesList">
@@ -372,6 +384,7 @@
     <MESSAGE value="start on api" />
     <MESSAGE value="add tick event implementation" />
     <MESSAGE value="fix fabric module" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix fabric module" />
+    <MESSAGE value="add git commit to jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add git commit to jar" />
   </component>
 </project>
