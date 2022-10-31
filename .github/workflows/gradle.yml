@@ -23,4 +23,4 @@ jobs:
           prerelease: false
           title: "Toast Client"
           files: |
-            out/*
+            out/*.jar
