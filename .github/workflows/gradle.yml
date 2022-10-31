@@ -22,5 +22,4 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           title: "Toast Client"
-          files: |
-            out/*.jar
+          files: 'out/**'
