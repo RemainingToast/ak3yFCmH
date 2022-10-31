@@ -9,7 +9,7 @@ jobs:
   release:
     name: "Build & Release"
     runs-on: "ubuntu-latest"
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@v2
@@ -24,9 +24,11 @@ jobs:
 
       - name: Decomp Workspace
         run: ./gradlew setupDecompWorkspace
+        timeout-minutes: 10
 
       - name: Build
         run: ./gradlew build
+        timeout-minutes: 10
 
       - name: Publish Release
         uses: marvinpinto/action-automatic-releases@latest
