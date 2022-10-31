@@ -1,11 +1,11 @@
 [
 	{
-		"modid": "toastclient-mod12",
+		"modid": "toastclient-mc12",
 		"name": "ToastClient",
-		"description": "ToastClient 1.12.2",
+		"description": "The best client in Minecraft.",
 		"version": "${version}",
 		"mcversion": "${mcversion}",
-		"url": "",
+		"url": "https://discord.auscpvp.org",
 		"authorList": ["RemainingToast"],
 		"logoFile": ""
 	}
