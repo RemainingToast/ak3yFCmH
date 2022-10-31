@@ -50,3 +50,7 @@ subprojects {
         }
     }
 }
+
+build.doFirst {
+    delete(file("$rootDir/out"))
+}
