@@ -42,11 +42,8 @@ shadowJar {
     dependencies {
         include(project(':toastclient-api'))
         include(dependency('com.lukflug:.*'))
+        include(dependency('com.github.therealbush:.*'))
     }
-}
-
-build {
-    dependsOn(shadowJar)
 }
 
 tasks.withType(JavaCompile).configureEach {

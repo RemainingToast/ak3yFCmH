@@ -55,9 +55,6 @@ shadowJar {
 		include(project(':toastclient-api'))
 		include(dependency('com.lukflug:.*'))
 		include(dependency('org.spongepowered:.*'))
+		include(dependency('com.github.therealbush:.*'))
 	}
-}
-
-build {
-	dependsOn(shadowJar)
 }
