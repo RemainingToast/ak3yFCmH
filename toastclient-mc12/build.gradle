@@ -1,5 +1,3 @@
-import org.apache.tools.ant.filters.ReplaceTokens
-
 buildscript {
 	repositories {
 		gradlePluginPortal()
@@ -15,12 +13,18 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle"
 
+version = parent.version.toString().replaceAll("mcversion", "1.12.2")
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
 processResources {
 	duplicatesStrategy = DuplicatesStrategy.INCLUDE
-
+	inputs.property "version", version
 	from(sourceSets.main.resources.srcDirs) {
 		include "mcmod.info"
-		filter(ReplaceTokens, tokens: [version: project.version, mcversion: "1.12.2"])
+		expand "version": version, "mcversion": "1.12.2"
+	}
+	from(sourceSets.main.resources.srcDirs) {
+		exclude "mcmod.info"
 	}
 }
 
@@ -44,12 +48,13 @@ minecraft {
 shadowJar {
 	getDestinationDirectory().set(file("$rootDir/out"))
 
-	final String version = parent.version.toString().replaceAll("mcversion", "1.12.2")
-	final String archiveName = parent.name + version + '.jar'
+	final String archiveName = parent.name + '-' + project.version + '.jar'
 	getArchiveFileName().set(archiveName)
 
 	dependencies {
 		include(project(':toastclient-api'))
+		include(dependency('com.lukflug:.*'))
+		include(dependency('org.spongepowered:.*'))
 	}
 }
 

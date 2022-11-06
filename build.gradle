@@ -11,7 +11,7 @@ ext {
 
 allprojects {
     group 'me.remainingtoast'
-    version "-mcversion-$branch+$git_version"
+    version "mcversion-$branch+$git_version"
 }
 
 subprojects {
@@ -23,7 +23,7 @@ subprojects {
         compileOnly 'org.projectlombok:lombok:1.18.24'
         annotationProcessor 'org.projectlombok:lombok:1.18.24'
         implementation 'com.github.therealbush:eventbus:1.0.2'
-        implementation "com.lukflug:panelstudio:0.2.1"
+        implementation 'com.lukflug:panelstudio:0.2.1'
     }
 
     repositories {

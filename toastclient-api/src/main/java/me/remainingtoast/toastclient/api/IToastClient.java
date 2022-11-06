@@ -5,7 +5,6 @@ import me.remainingtoast.toastclient.api.module.ModuleManager;
 
 public interface IToastClient {
     EventBus eventBus = new EventBus();
-
     String getVersion();
     ModuleManager getModuleManager();
 }
