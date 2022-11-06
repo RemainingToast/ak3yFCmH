@@ -1,0 +1,9 @@
+shadowJar {
+    final String archiveName = project.name + '.jar'
+    getArchiveFileName().set(archiveName)
+
+    dependencies {
+        include(dependency('com.lukflug:.*'))
+        include(dependency('com.github.therealbush:.*'))
+    }
+}

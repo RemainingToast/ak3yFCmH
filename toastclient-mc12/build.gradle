@@ -30,7 +30,7 @@ processResources {
 
 dependencies {
 	minecraft "net.minecraftforge:forge:${project.minecraft12}"
-	implementation project(':toastclient-api')
+	implementation project(path: ':toastclient-api', configuration: 'shadow')
 	implementation("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
 		exclude module: 'commons-io'
 		exclude module: 'gson'
