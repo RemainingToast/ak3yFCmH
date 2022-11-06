@@ -13,13 +13,15 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle"
 
+version = parent.version.toString().replaceAll("mcversion", "1.12.2")
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
 processResources {
 	duplicatesStrategy = DuplicatesStrategy.INCLUDE
-	String ver = parent.version.toString().replaceAll("mcversion", "1.12.2")
-	inputs.property "version", ver
+	inputs.property "version", version
 	from(sourceSets.main.resources.srcDirs) {
 		include "mcmod.info"
-		expand "version": ver, "mcversion": "1.12.2"
+		expand "version": version, "mcversion": "1.12.2"
 	}
 	from(sourceSets.main.resources.srcDirs) {
 		exclude "mcmod.info"
@@ -46,7 +48,6 @@ minecraft {
 shadowJar {
 	getDestinationDirectory().set(file("$rootDir/out"))
 
-	final String version = parent.version.toString().replaceAll("mcversion", "1.12.2")
 	final String archiveName = parent.name + version + '.jar'
 	getArchiveFileName().set(archiveName)
 

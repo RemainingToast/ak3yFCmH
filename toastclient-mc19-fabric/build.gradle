@@ -13,6 +13,7 @@ buildscript {
 
 apply plugin: "fabric-loom"
 
+version = parent.version.toString().replaceAll("mcversion", project.minecraft19fabric)
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 
 processResources {
@@ -35,12 +36,12 @@ dependencies {
 shadowJar {
     getDestinationDirectory().set(file("$rootDir/out"))
 
-    final String version = parent.version.toString().replaceAll("mcversion", project.minecraft19fabric)
-    final String archiveName = parent.name + version + '.jar'
+    final String archiveName = parent.name + project.version + '.jar'
     getArchiveFileName().set(archiveName)
 
     dependencies {
         include(project(':toastclient-api'))
+        include(dependency('com.lukflug:.*'))
     }
 }
 
