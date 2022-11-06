@@ -11,7 +11,7 @@ ext {
 
 allprojects {
     group 'me.remainingtoast'
-    version "-mcversion-$branch+$git_version"
+    version "mcversion-$branch+$git_version"
 }
 
 subprojects {
